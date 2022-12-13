@@ -1,0 +1,38 @@
+class calculator:
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
+        
+    def add(self):
+        return self.a+self.b
+    def sub(self):
+        return self.a-self.b
+    def mult(self):
+        return self.a*self.b
+    def div(self):
+        return self.a/self.b
+        a=int(input("Enter a "))
+b=int(input("Enter b "))
+o=calculator(a,b)
+
+ch=1
+while ch!=5:
+    print("1.Add")
+    print("2.Sub")
+    print("3.Mul")
+    print("4.div")
+    print("5.Exit")
+    ch=int(input("Enter your choise:"))
+    if ch==1:
+        print("Addition:",o.add())
+    elif ch==2:
+        print("Subtraction:",o.sub()) 
+    elif ch==3:
+        print("Multiplication:",o.mult())     
+    elif ch==4:
+        print("Divison:",o.div()) 
+    elif ch==5:
+        print("Exiting")
+    else:
+        print("Invalid")
+print()        
